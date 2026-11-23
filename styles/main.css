@@ -1,0 +1,475 @@
+/* ==========================================================================
+   main.css - Stylesheet for IronPulse Gym Home Page (index.html)
+   Implements 3-Column Layout, Gradients, Typography, and Floated Elements
+   100% Pure CSS - No JavaScript Required
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #e63946;
+  --primary-dark: #b71c1c;
+  --secondary-color: #1a1e24;
+  --accent-color: #f39c12;
+  --bg-dark: #0f1216;
+  --bg-card: #181d24;
+  --bg-card-alt: #202731;
+  --text-main: #f0f4f8;
+  --text-muted: #94a3b8;
+  --border-color: #2b3544;
+  --container-width: 1180px;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fixed Centered Container per Exam Spec */
+.page-wrapper {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  background-color: var(--bg-dark);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Banner with Gradient */
+.site-header {
+  background: linear-gradient(135deg, #8b0000 0%, #1f232a 65%, #0f1216 100%);
+  color: #ffffff;
+  padding: 24px 30px;
+  border-bottom: 3px solid var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-logo-img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.brand-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.brand-text h1 span {
+  color: var(--primary-color);
+}
+
+.brand-tagline {
+  margin: 4px 0 0 0;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.header-badges {
+  display: flex;
+  gap: 12px;
+}
+
+.badge-item {
+  background: rgba(230, 57, 70, 0.25);
+  border: 1px solid var(--primary-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Horizontal Navigation Bar */
+.main-nav {
+  background: #15191f;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  display: block;
+  padding: 14px 22px;
+  color: #cbd5e1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.main-nav a:hover {
+  background-color: rgba(230, 57, 70, 0.15);
+  color: #ffffff;
+  border-bottom-color: var(--primary-color);
+}
+
+.main-nav a.active {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+/* 3-Column Layout: Left Sidebar A, Main Content, Right Sidebar B */
+.three-column-layout {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 20px;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Sidebar Left (Sidebar A) */
+.sidebar-left {
+  flex: 0 0 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1 1 auto;
+  min-width: 0;
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  padding: 26px 28px;
+  border: 1px solid var(--border-color);
+}
+
+/* Sidebar Right (Sidebar B) */
+.sidebar-right {
+  flex: 0 0 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Shared Sidebar Card Styling */
+.widget-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.widget-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Sidebar Lists and Links */
+.widget-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.widget-list li {
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #232b36;
+}
+
+.widget-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.widget-list a {
+  color: #93c5fd;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.widget-list a:hover {
+  color: var(--primary-color);
+  transform: translateX(4px);
+}
+
+/* Floated Image Section per Exam Requirement */
+.floated-img-container {
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.floated-img {
+  float: left;
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  margin: 0 22px 18px 0;
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Headings & Typography */
+h1.content-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+h2.sub-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+p {
+  color: #cbd5e1;
+  font-size: 0.98rem;
+  margin-bottom: 16px;
+}
+
+.clear-float {
+  clear: both;
+}
+
+/* Ordered & Unordered Lists in Main Section */
+.ordered-features, .unordered-highlights {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+.ordered-features li, .unordered-highlights li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.ordered-features strong, .unordered-highlights strong {
+  color: #ffffff;
+}
+
+/* Call to Action Grid */
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 24px 0 10px 0;
+}
+
+.cta-box {
+  background: var(--bg-card-alt);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.cta-box:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+}
+
+.cta-box h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+.cta-box p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.btn-action {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 8px 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-action:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Hours Table */
+.hours-table {
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+.hours-table td {
+  padding: 6px 0;
+  color: #cbd5e1;
+}
+
+.hours-table td.day {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hours-table td.time {
+  text-align: right;
+  color: var(--accent-color);
+}
+
+/* Footer with Gradient and Character Entity */
+.site-footer {
+  background: linear-gradient(135deg, #1f232a 0%, #12151a 50%, #8b0000 100%);
+  color: #94a3b8;
+  border-top: 3px solid var(--primary-color);
+  padding: 24px 30px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-copy {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.footer-links a {
+  color: #93c5fd;
+  margin-left: 14px;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+/* ==========================================================================
+   Responsive Web Design - Media Queries per Exam Spec
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .three-column-layout {
+    flex-wrap: wrap;
+  }
+  .sidebar-left {
+    flex: 1 1 100%;
+    order: 2;
+  }
+  .main-content {
+    flex: 1 1 100%;
+    order: 1;
+  }
+  .sidebar-right {
+    flex: 1 1 100%;
+    order: 3;
+  }
+  .floated-img {
+    width: 260px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 650px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .brand-text h1 {
+    font-size: 1.5rem;
+  }
+  .main-nav ul {
+    flex-direction: column;
+  }
+  .main-nav a {
+    padding: 10px 16px;
+    border-left: 4px solid transparent;
+    border-bottom: none;
+  }
+  .main-nav a.active {
+    border-left-color: var(--primary-color);
+    border-bottom-color: transparent;
+  }
+  .floated-img {
+    float: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 16px 0;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links a {
+    margin: 0 8px;
+  }
+}

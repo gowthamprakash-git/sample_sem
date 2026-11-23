@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Targeted workout prescriptions for every defined muscle group with sets, reps, and form guidance. Styled with Bootstrap CSS.">
+  <title>Targeted Workout Recommendations | IronPulse Gym</title>
+
+  <!-- Bootstrap 5 CSS (Requirement: Use Bootstrap in Project - 100% Pure CSS, Zero JS) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Project Normalize & Content Stylesheets per Exam Spec -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/content.css">
+</head>
+
+<body>
+  <!-- Fixed Width Centered Container per Exam Spec -->
+  <div class="page-wrapper">
+
+    <!-- Header with Website Title and Tagline per Exam Spec -->
+    <header class="site-header">
+      <div class="brand-container">
+        <a href="index.html">
+          <img src="images/logo-badge.jpg" alt="IronPulse Gym Logo" class="brand-logo-img">
+        </a>
+        <div class="brand-text">
+          <h1>Iron<span>Pulse</span> Gym</h1>
+          <p class="brand-tagline">Master Your Anatomy &bull; Forge Your Strength &bull; Transform Your Body</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Horizontal Navigation Bar with Current Active Page -->
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="muscles.html">Muscles</a></li>
+        <li><a href="defined-muscles.html">Targeted Muscles</a></li>
+        <li><a href="workout.html" class="active">Workouts</a></li>
+      </ul>
+    </nav>
+
+    <!-- 2-Column Layout per Exam Spec: Aside + Main Content -->
+    <div class="two-column-layout">
+
+      <!-- Left Aside with Link Back to Home Page & Quick Navigation per Exam Spec -->
+      <aside class="sidebar-aside" aria-label="Workout Navigation">
+
+        <!-- Required Link back to Home Page -->
+        <a href="index.html" class="back-home-link">&larr; Back to Home Page</a>
+
+        <div class="aside-widget">
+          <h3 class="aside-title">Targeted Workouts</h3>
+          <ul class="aside-menu">
+            <li><a href="#upper-chest">&bull; Upper Chest Workouts</a></li>
+            <li><a href="#middle-chest">&bull; Middle Chest Workouts</a></li>
+            <li><a href="#lower-chest">&bull; Lower Chest Workouts</a></li>
+            <li><a href="#quadriceps">&bull; Quadriceps Workouts</a></li>
+            <li><a href="#hamstrings">&bull; Hamstrings Workouts</a></li>
+            <li><a href="#calves">&bull; Calves Workouts</a></li>
+            <li><a href="#bicep-long">&bull; Bicep Peak (Long Head)</a></li>
+            <li><a href="#bicep-short">&bull; Bicep Width (Short Head)</a></li>
+            <li><a href="#brachialis">&bull; Brachialis Workouts</a></li>
+            <li><a href="#tricep-lateral">&bull; Tricep Lateral Head</a></li>
+            <li><a href="#tricep-long">&bull; Tricep Long Head</a></li>
+            <li><a href="#delt-front">&bull; Front Deltoid Workouts</a></li>
+            <li><a href="#delt-side">&bull; Side Deltoid Workouts</a></li>
+            <li><a href="#delt-rear">&bull; Rear Deltoid Workouts</a></li>
+            <li><a href="#back-lats">&bull; Latissimus Dorsi (Lats)</a></li>
+            <li><a href="#back-traps">&bull; Trapezius &amp; Upper Back</a></li>
+          </ul>
+        </div>
+
+        <div class="aside-widget">
+          <h3 class="aside-title">Training Summary</h3>
+          <ul class="aside-menu">
+            <li><a href="#workout-routine">&rarr; Protocol Summary Table</a></li>
+            <li><a href="#media-section">&rarr; Audio Coaching &amp; PDF</a></li>
+          </ul>
+        </div>
+
+        <div class="aside-widget">
+          <h3 class="aside-title">Coaching Tip</h3>
+          <p style="font-size: 0.85rem; color: #cbd5e1; line-height: 1.5;">
+            &ldquo;Targeting specific muscle heads requires locking your joint paths. Avoid swinging or changing body
+            angles mid-repetition.&rdquo;
+          </p>
+        </div>
+      </aside>
+
+      <!-- Main Content Area with Workouts, Tables, and Media Links -->
+      <main class="content-area" aria-label="Workout Recommendations">
+        <h1 class="page-title">Targeted Workout Recommendations</h1>
+        <p>
+          Welcome to the training execution hub! Below you will find scientifically prescribed workouts matched directly
+          to each targeted muscle group. Each exercise includes real photo demonstrations, biomechanical execution cues,
+          optimal set/rep ranges, and rest intervals.
+        </p>
+
+        <!-- Bootstrap Grid Showcase of Featured Compound Lifts (Zero JS) -->
+        <h2 class="muscle-heading"> Foundation Exercises </h2>
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-md-4">
+            <div class="card bg-dark text-white border-secondary h-100 shadow">
+              <img src="images/upper-chest.jpg" class="card-img-top" alt="Incline Dumbbell Bench Press for Upper Chest"
+                style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <span class="badge bg-danger mb-2">Upper Chest</span>
+                <h5 class="card-title fw-bold">Incline DB Press</h5>
+                <p class="card-text text-secondary" style="font-size: 0.85rem;">30&deg; incline angle optimizes
+                  clavicular fiber tension while sparing anterior deltoids.</p>
+                <a href="#upper-chest" class="btn btn-outline-danger btn-sm w-100">View Protocol</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card bg-dark text-white border-secondary h-100 shadow">
+              <img src="images/quadriceps.jpg" class="card-img-top" alt="Barbell Back Squat for Quadriceps"
+                style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Quadriceps</span>
+                <h5 class="card-title fw-bold">Barbell Back Squat</h5>
+                <p class="card-text text-secondary" style="font-size: 0.85rem;">The king of lower body development. Full
+                  knee flexion stimulates all 4 quad heads.</p>
+                <a href="#quadriceps" class="btn btn-outline-primary btn-sm w-100">View Protocol</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card bg-dark text-white border-secondary h-100 shadow">
+              <img src="images/back-lats.jpg" class="card-img-top" alt="Weighted Pull-ups and Lat Pulldowns for Back"
+                style="height: 180px; object-fit: cover;">
+              <div class="card-body">
+                <span class="badge bg-success mb-2">Lats (Back)</span>
+                <h5 class="card-title fw-bold">Wide-Grip Pulldown</h5>
+                <p class="card-text text-secondary" style="font-size: 0.85rem;">Vertical shoulder adduction with
+                  scapular depression creates wide V-taper wings.</p>
+                <a href="#back-lats" class="btn btn-outline-success btn-sm w-100">View Protocol</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="muscle-heading">Prescribed Exercises by Targeted Muscle</h2>
+
+        <!-- CHEST: Upper Chest -->
+        <article class="workout-card" id="upper-chest">
+          <div class="workout-card-grid">
+            <img src="images/upper-chest.jpg" alt="Lifter performing Incline Dumbbell Bench Press"
+              class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-danger text-white mb-2">Targeted Muscle: Upper Chest (Clavicular Head)</span>
+                  <h3>1. Incline Dumbbell Bench Press</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Dumbbells</span>
+                  <span class="pill-meta">&#9733; Primary Compound</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Set bench incline to 30 degrees. Retract and depress scapulae. Lower
+                dumbbells until thumbs align with upper armpits, then press upward along clavicular pennation lines.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Upper Clavicular</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 8-10</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">90 - 120s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CHEST: Middle Chest -->
+        <article class="workout-card" id="middle-chest">
+          <div class="workout-card-grid">
+            <img src="images/middle-chest.jpg" alt="Lifter performing Flat Barbell Bench Press"
+              class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-danger text-white mb-2">Targeted Muscle: Middle Chest (Sternal Head)</span>
+                  <h3>2. Flat Barbell Bench Press</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Barbell</span>
+                  <span class="pill-meta">&#9733; Power &amp; Mass</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Grip slightly wider than shoulder width. Maintain thoracic arch with
+                glutes planted. Lower bar to mid-sternum, drive through floor, and press explosively.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Sternal Mid-Pec</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 6-8</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">120 - 180s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 9.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CHEST: Lower Chest -->
+        <article class="workout-card" id="lower-chest">
+          <div class="workout-card-grid">
+            <img src="images/lower-chest.jpg" alt="Lifter performing High-to-Low Cable Crossovers"
+              class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-danger text-white mb-2">Targeted Muscle: Lower Chest (Abdominal Head)</span>
+                  <h3>3. High-to-Low Cable Crossover Flyes</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Cable Tower</span>
+                  <span class="pill-meta">&#9733; Peak Squeeze</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Position pulleys above shoulder height. Stagger stance with slight
+                forward lean. Sweep hands downward across lower torso, squeezing lower chest for 1 full second.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Abdominal Head</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">3 Sets &times; 12-15</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">60 - 75s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- LEGS: Quadriceps -->
+        <article class="workout-card" id="quadriceps">
+          <div class="workout-card-grid">
+            <img src="images/quadriceps.jpg" alt="Lifter performing deep barbell back squat" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-primary text-white mb-2">Targeted Muscle: Quadriceps (4 Heads)</span>
+                  <h3>4. Barbell Back Squat &amp; Leg Extensions</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Barbell / Machine</span>
+                  <span class="pill-meta">&#9733; Lower Foundation</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Bar on upper traps. Inhale and brace core 360 degrees. Break at hips
+                and knees together, descend to parallel depth, and drive upward through mid-foot.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">All 4 Quad Heads</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 6-8</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">120 - 180s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- LEGS: Hamstrings -->
+        <article class="workout-card" id="hamstrings">
+          <div class="workout-card-grid">
+            <img src="images/hamstrings.jpg" alt="Lifter performing Romanian Deadlifts" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-primary text-white mb-2">Targeted Muscle: Hamstrings (Biceps Femoris)</span>
+                  <h3>5. Romanian Deadlift (RDL)</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Barbell / Dumbbells</span>
+                  <span class="pill-meta">&#9733; Posterior Chain</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Soft knees. Push hips backward toward wall behind you while keeping
+                bar skimming against shins. Feel deep hamstring stretch before driving hips forward.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Biceps Femoris</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">3 Sets &times; 8-10</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">90 - 120s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- LEGS: Calves -->
+        <article class="workout-card" id="calves">
+          <div class="workout-card-grid">
+            <img src="images/calves.jpg" alt="Lifter performing calf raises" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-primary text-white mb-2">Targeted Muscle: Calves (Gastrocnemius &amp;
+                    Soleus)</span>
+                  <h3>6. Standing &amp; Seated Calf Raises</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Machine</span>
+                  <span class="pill-meta">&#9733; Ankle Plantarflexion</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Straight knees for standing raises (gastrocnemius); 90-degree bent
+                knees for seated raises (soleus). Pause 2 seconds at the deep bottom stretch on every rep!
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Gastrocnemius &amp; Soleus</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 12-15</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">60s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 9.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BICEPS: Long Head -->
+        <article class="workout-card" id="bicep-long">
+          <div class="workout-card-grid">
+            <img src="images/bicep-long.jpg" alt="Incline Dumbbell Curl for Bicep Peak" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-warning text-dark mb-2">Targeted Muscle: Biceps Long Head (Peak)</span>
+                  <h3>7. Incline Dumbbell Bicep Curl</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Incline Bench</span>
+                  <span class="pill-meta">&#9733; Peak Hypertrophy</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Sit on a 45-degree incline bench with arms hanging fully behind
+                torso. Curl dumbbells while supinating wrists outward at apex of movement.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Long Head (Outer Peak)</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">3 Sets &times; 10-12</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">60 - 90s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BICEPS: Short Head -->
+        <article class="workout-card" id="bicep-short">
+          <div class="workout-card-grid">
+            <img src="images/bicep-short.jpg" alt="Preacher Curl for Bicep Short Head" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-warning text-dark mb-2">Targeted Muscle: Biceps Short Head (Width)</span>
+                  <h3>8. EZ-Bar Preacher Curl</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Preacher Bench</span>
+                  <span class="pill-meta">&#9733; Strict Isolation</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Anchor upper arms firmly over preacher pad. Use slightly wider grip
+                to emphasize inner short head. Lower under control without letting elbows hyperextend.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Short Head (Inner Width)</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">3 Sets &times; 10-12</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">60 - 90s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BICEPS: Brachialis -->
+        <article class="workout-card" id="brachialis">
+          <div class="workout-card-grid">
+            <img src="images/brachialis.jpg" alt="Cross-Body Hammer Curls for Brachialis" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-warning text-dark mb-2">Targeted Muscle: Brachialis (Thickness)</span>
+                  <h3>9. Cross-Body Dumbbell Hammer Curls</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Dumbbells</span>
+                  <span class="pill-meta">&#9733; Neutral Grip</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Keep palms facing inward. Curl dumbbell diagonally across chest
+                toward opposite collarbone to bypass bicep supination and fire the deep brachialis.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Brachialis &amp; Forearms</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">3 Sets &times; 10-12</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">60s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- TRICEPS: Lateral Head -->
+        <article class="workout-card" id="tricep-lateral">
+          <div class="workout-card-grid">
+            <img src="images/tricep-lateral.jpg" alt="Cable Tricep Pushdown for Lateral Head" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-info text-dark mb-2">Targeted Muscle: Triceps Lateral Head (Horseshoe)</span>
+                  <h3>10. Cable Tricep Rope Pushdowns</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Cable Machine</span>
+                  <span class="pill-meta">&#9733; Lateral Sweep</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Pin elbows tight against ribs. Push rope downward and spread rope
+                tips apart at bottom lockout to intensely engage outer horseshoe head.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Lateral Head</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 10-12</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">60s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- TRICEPS: Long Head -->
+        <article class="workout-card" id="tricep-long">
+          <div class="workout-card-grid">
+            <img src="images/tricep-long.jpg" alt="Overhead Tricep Extension for Long Head" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-info text-dark mb-2">Targeted Muscle: Triceps Long Head (Inner Mass)</span>
+                  <h3>11. Overhead Cable Tricep Extension</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; High Cable &amp; Rope</span>
+                  <span class="pill-meta">&#9733; Overhead Stretch</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Face away from high pulley. Keep elbows alongside ears. Allow cable
+                to pull elbows into deep flexion behind head before extending into full lockout.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Long Head Mass</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">3 Sets &times; 10-12</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">75s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SHOULDERS: Side Delt -->
+        <article class="workout-card" id="delt-side">
+          <div class="workout-card-grid">
+            <img src="images/delt-side.jpg" alt="Dumbbell Lateral Raise for Side Deltoid" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-secondary text-white mb-2">Targeted Muscle: Lateral Deltoid (Width)</span>
+                  <h3>12. Dumbbell &amp; Cable Lateral Raises</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Dumbbells / Cable</span>
+                  <span class="pill-meta">&#9733; V-Taper Builder</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Raise arms in scapular plane (30 degrees forward of direct lateral).
+                Lead with elbows, stop at shoulder height, and control 3-second lowering.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Lateral (Side) Deltoid</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 12-15</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">60s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 9.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SHOULDERS: Front Delt -->
+        <article class="workout-card" id="delt-front">
+          <div class="workout-card-grid">
+            <img src="images/delt-front.jpg" alt="Overhead Press for Front Deltoid" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-secondary text-white mb-2">Targeted Muscle: Anterior Deltoid (Front)</span>
+                  <h3>13. Standing Overhead Barbell Press</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Barbell</span>
+                  <span class="pill-meta">&#9733; Vertical Push</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Stand tall with core braced and glutes locked. Press bar straight up
+                past chin, shifting head through window at top lockout directly over mid-foot.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Anterior Deltoid</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 6-8</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">120s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SHOULDERS: Rear Delt -->
+        <article class="workout-card" id="delt-rear">
+          <div class="workout-card-grid">
+            <img src="images/delt-rear.jpg" alt="Face Pulls for Rear Deltoid" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-secondary text-white mb-2">Targeted Muscle: Posterior Deltoid (Rear)</span>
+                  <h3>14. Cable Rope Face Pulls</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Cable Machine</span>
+                  <span class="pill-meta">&#9733; Postural Balance</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Set pulley at eye level. Pull rope toward bridge of nose while
+                externally rotating hands back so thumbs point behind you. Squeeze rear delts hard.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Posterior Deltoid</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 15-20</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">60s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BACK: Lats -->
+        <article class="workout-card" id="back-lats">
+          <div class="workout-card-grid">
+            <img src="images/back-lats.jpg" alt="Lat Pulldowns and Pull-ups for Back Width" class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-success text-white mb-2">Targeted Muscle: Latissimus Dorsi (Lats)</span>
+                  <h3>15. Wide-Grip Lat Pulldowns &amp; Pull-ups</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Cable / Bodyweight</span>
+                  <span class="pill-meta">&#9733; V-Taper Wings</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Depress scapulae first before pulling elbows down and in toward
+                ribcage. Avoid excessive backward lean to keep mechanical load isolated on latissimus fibers.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Latissimus Dorsi</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 8-10</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">90s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BACK: Traps -->
+        <article class="workout-card" id="back-traps">
+          <div class="workout-card-grid">
+            <img src="images/back-traps.jpg" alt="Chest Supported Rows for Trapezius and Upper Back"
+              class="workout-card-img">
+            <div class="workout-card-content">
+              <div class="workout-header-row">
+                <div>
+                  <span class="badge bg-success text-white mb-2">Targeted Muscle: Trapezius &amp; Rhomboids</span>
+                  <h3>16. Chest-Supported T-Bar Rows</h3>
+                </div>
+                <div class="workout-meta">
+                  <span class="pill-meta">&#9881; Leverage Machine</span>
+                  <span class="pill-meta">&#9733; Upper Back Density</span>
+                </div>
+              </div>
+              <p>
+                <strong>Biomechanical Cue:</strong> Anchor chest firmly against support pad. Flare elbows out to 60
+                degrees. Retract shoulder blades fully together at peak contraction and hold for 1 second.
+              </p>
+              <div class="workout-stats-grid">
+                <div class="stat-item">
+                  <span class="stat-label">Target Head</span>
+                  <span class="stat-value">Traps &amp; Rhomboids</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Sets &amp; Reps</span>
+                  <span class="stat-value">4 Sets &times; 8-10</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Rest</span>
+                  <span class="stat-value">90s</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Intensity</span>
+                  <span class="stat-value">RPE 8.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- STRUCTURED WORKOUT SUMMARY TABLE (Bootstrap Table Style) -->
+        <h2 class="muscle-heading" id="workout-routine">Targeted Workout Summary Table</h2>
+        <div class="table-responsive-custom">
+          <table class="table table-dark table-hover table-bordered mb-0">
+            <thead class="table-danger text-white">
+              <tr>
+                <th>Targeted Muscle Head</th>
+                <th>Prescribed Exercise</th>
+                <th>Equipment</th>
+                <th>Sets &times; Reps</th>
+                <th>Rest Period</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Upper Chest</strong> (Clavicular)</td>
+                <td>Incline Dumbbell Bench Press</td>
+                <td>Dumbbells (30&deg; Incline)</td>
+                <td>4 &times; 8-10</td>
+                <td>90 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Middle Chest</strong> (Sternal)</td>
+                <td>Flat Barbell Bench Press</td>
+                <td>Olympic Barbell</td>
+                <td>4 &times; 6-8</td>
+                <td>120 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Lower Chest</strong> (Abdominal)</td>
+                <td>High-to-Low Cable Flyes</td>
+                <td>Dual Cable Tower</td>
+                <td>3 &times; 12-15</td>
+                <td>60 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Quadriceps</strong> (Front Thigh)</td>
+                <td>Barbell Back Squat</td>
+                <td>Squat Rack &amp; Barbell</td>
+                <td>4 &times; 6-8</td>
+                <td>120 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Hamstrings</strong> (Rear Thigh)</td>
+                <td>Romanian Deadlift (RDL)</td>
+                <td>Barbell / Dumbbells</td>
+                <td>3 &times; 8-10</td>
+                <td>90 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Calves</strong> (Gastrocnemius)</td>
+                <td>Standing &amp; Seated Calf Raises</td>
+                <td>Calf Raise Stations</td>
+                <td>4 &times; 12-15</td>
+                <td>60 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Biceps Long Head</strong> (Peak)</td>
+                <td>Incline Dumbbell Curl</td>
+                <td>Dumbbells (45&deg; Bench)</td>
+                <td>3 &times; 10-12</td>
+                <td>60 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Biceps Short Head</strong> (Width)</td>
+                <td>EZ-Bar Preacher Curl</td>
+                <td>Preacher Bench &amp; EZ Bar</td>
+                <td>3 &times; 10-12</td>
+                <td>60 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Brachialis</strong> (Thickness)</td>
+                <td>Cross-Body Hammer Curls</td>
+                <td>Dumbbells</td>
+                <td>3 &times; 10-12</td>
+                <td>60 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Triceps Lateral Head</strong></td>
+                <td>Cable Rope Pushdown</td>
+                <td>Cable Machine &amp; Rope</td>
+                <td>4 &times; 10-12</td>
+                <td>60 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Triceps Long Head</strong></td>
+                <td>Overhead Cable Extension</td>
+                <td>High Pulley &amp; Rope</td>
+                <td>3 &times; 10-12</td>
+                <td>75 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Side Deltoid</strong> (Width)</td>
+                <td>Dumbbell Lateral Raise</td>
+                <td>Dumbbells / Low Cable</td>
+                <td>4 &times; 12-15</td>
+                <td>60 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Front Deltoid</strong></td>
+                <td>Overhead Barbell Press</td>
+                <td>Barbell</td>
+                <td>4 &times; 6-8</td>
+                <td>120 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Rear Deltoid</strong></td>
+                <td>Cable Rope Face Pulls</td>
+                <td>Cable Machine &amp; Rope</td>
+                <td>4 &times; 15-20</td>
+                <td>60 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Latissimus Dorsi</strong> (Lats)</td>
+                <td>Wide-Grip Lat Pulldown</td>
+                <td>Lat Pulldown Station</td>
+                <td>4 &times; 8-10</td>
+                <td>90 sec</td>
+              </tr>
+              <tr>
+                <td><strong>Trapezius &amp; Upper Back</strong></td>
+                <td>Chest-Supported T-Bar Rows</td>
+                <td>Leverage Row Machine</td>
+                <td>4 &times; 8-10</td>
+                <td>90 sec</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- MEDIA & DOWNLOAD RESOURCES PER EXAM SPEC PAGE 7 -->
+        <section class="media-resources-box" id="media-section">
+          <h3>Media &amp; Examination Project Resources</h3>
+          <p style="font-size: 0.92rem; color: #cbd5e1;">
+            Per the project guidelines (illustrated on page 7 of the exam specifications), this page provides links to
+            an audio coaching file and a downloadable PDF document.
+          </p>
+
+          <!-- Audio Guide Feature -->
+          <div class="audio-player-wrapper">
+            <p style="font-weight: 700; color: #ffffff; margin-bottom: 6px;">
+              &#127911; Listen to Trainer Audio Form Cue:
+            </p>
+            <audio controls preload="metadata">
+              <source src="media/gym-coaching.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+            <div>
+              <a href="media/gym-coaching.wav" style="font-size: 0.85rem; color: #93c5fd; text-decoration: underline;"
+                target="_blank">
+                Direct link to audio file (gym-coaching.wav)
+              </a>
+            </div>
+          </div>
+
+          <!-- View and Download PDF Section -->
+          <div style="margin-top: 20px;">
+            <p style="font-weight: 700; color: #ffffff; margin-bottom: 8px;">
+              &#128196; Workout Advises Guide (View Online First):
+            </p>
+            <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 12px;">
+              You can read and view the full workout guide directly below in the interactive viewer. If you wish to save
+              an offline copy, use the manual download button.
+            </p>
+
+            <!-- Action buttons: View in full tab (no auto-download) + Manual download -->
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+              <a href="media/workout_advises.pdf" target="_blank" rel="noopener noreferrer" class="download-link-btn"
+                style="background-color: #2980b9;">
+                View PDF in New Tab
+              </a>
+              <a href="media/workout_advises.pdf" download="workout_advises.pdf" class="download-link-btn"
+                style="background-color: #27ae60;">
+                Download PDF Manually
+              </a>
+
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <!-- Footer with Gradient, Links, and Character Entity per Exam Spec -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-copy">
+          &copy; 2026 IronPulse Fitness Academy. All rights reserved. &bull; Pure HTML &amp; CSS Project
+        </p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="muscles.html">Muscles</a>
+          <a href="defined-muscles.html">Targeted Muscles</a>
+          <a href="workout.html">Workouts</a>
+          <a href="#media-section">Audio &amp; Resources</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
